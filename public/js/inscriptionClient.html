@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Nouveau client</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="styleform.css" /> 
+    </head>
+
+    <body>
+        <form id="nouveauClient" action="" method="post"> 
+            <div class="titre">Nouveau compte CLIENT</div>
+            <fieldset>
+                <legend> Identification : </legend>
+                <label for="pseudo">Pseudo choisi :</label> <input type='text' name='pseudo' id='pseudo'/><br />
+                <label for="pass1"> Mot de passe :</label><input type='password' name='pass1' id='pass1'/><br />
+                <label for="pass2"> Resaisir le passe :</label><input type='password' name='pass2' id='pass2'/><br />
+            </fieldset>
+
+            <fieldset>
+                <legend> Coordonnées : </legend>
+                <label for="mail">Adresse mail :</label> <input type='text' name='mail' id='mail'/><br />
+                <label for="nom">Nom :</label><input type='text' name='nom' id='nom'/><br />
+                <label for="prenom">Prénom :</label><input type='text' name='prenom' id='prenom'/><br />
+                <label for="cp">Code Postal :</label><input type='text' name='cp' id='cp'/><br />
+                <label for="ville">Ville :</label><input type='text' name='ville' id='ville'/>
+            </fieldset>
+            <fieldset class="sansBordure">
+                <span> Acceptez-vous de recevoir notre newsletter ? </span>
+                <label for="oui" class="enligne">oui</label> <input type="radio" name="newsletter" value="oui" id="oui" checked="checked" /> 
+                <label for="non" class="enligne">non</label> <input type="radio" name="newsletter" value="non" id="non" />
+                <br />		
+                <input name='conditions' id='conditions' type='checkbox'/><label for="conditions" class="enligne">  J'accepte les <a href='#'>conditions générales</a></label>
+                <br />
+                <input type='submit' name='Valider' id='valider' value='VALIDER' />
+            </fieldset>
+        </form>
+    </body>
+
+</html>

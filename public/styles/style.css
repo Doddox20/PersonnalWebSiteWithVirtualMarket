@@ -1,0 +1,427 @@
+
+.navbar-brand{
+    font-size: 35px;
+}
+.navbar-toggler{
+    width: 82px;
+    height: 50px;
+   
+}
+.navbar-toggler-icon{
+    width: 50px;
+    height: 40px;
+}
+
+body#Normal{
+    /* background-image: url("../img/FondBackBon.png"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: #212930;
+    background-color: #212930;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    
+}
+body{
+
+    color: #212930;
+    background-color: #212930;
+    
+}
+
+.text-dark{
+    color:antiquewhite;
+}
+
+
+
+
+nav#menu_gauche
+{
+    width:200px;
+    
+    vertical-align: top;
+    margin-top: 200px;
+    margin-bottom: 20px;
+    background-color: rgba(33,41,48);
+    padding-top: 2px;
+    
+}
+
+nav#menu_gauche h1 {text-align: center;color:#000000;background-color: rgb(132, 136, 138) ; border-radius: 20px;}
+nav#menu_gauche ul{ list-style-type: none; font-weight: bold;}
+nav#menu_gauche ul li a{text-decoration: none; color:antiquewhite;padding:0 30 px; }
+nav#menu_gauche ul li a.active,nav#menu_gauche ul li a:hover{ background: antiquewhite; color:#fff; }
+
+.pieds{
+
+    background: rgba(72,64,51);
+    
+    position:absolute;
+    
+    bottom:0;
+    
+    width:100%;
+    
+    text-align: center;
+    
+    height:50px;
+     
+    color: antiquewhite;
+
+    }
+
+.connecter{
+    position: absolute;
+    bottom:40px;
+    
+}
+.Admin{
+    position: absolute;
+    bottom:80px;
+}
+
+.Produ{
+    text-align: justify;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px;
+   
+}
+.Connection{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#pseudo{
+    margin-bottom: 10px;
+    
+    height: 42px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 2px;
+    color: antiquewhite;
+    border-color: antiquewhite;
+    background-color: #212930;
+}
+#pass{
+    margin-bottom: 20px;
+    height: 42px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid 2px;
+    color: antiquewhite;
+    border-color: antiquewhite;
+    background-color: #212930;
+}
+#connexion_auto{
+   margin-right: 10px; 
+   margin-bottom: 10px;
+}
+.enligne{
+    color: antiquewhite;
+}
+#valider{
+    
+    border-radius: 30px;
+    background-color: antiquewhite;
+}
+.Nouvelle{
+    
+    color: antiquewhite;
+    text-decoration: none;
+    
+
+}
+.Nouvelle:hover{
+    text-decoration: underline;
+    color: antiquewhite;
+}
+.Admin{
+    margin-top: 50px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-size: 13px;
+    
+
+}
+.Admin:hover{
+    text-decoration: underline;
+    color: antiquewhite;
+}
+.autre{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border: solid 1px antiquewhite;
+    
+
+    margin-top: 30px;
+
+    
+
+}
+
+.CV{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ParaCv{
+    position: relative;
+    top:200px;
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    right:800px;
+}
+.CorpCV{
+    display: flex;
+    flex-direction: column;
+    color:antiquewhite;
+    position: relative;
+    top:50px;
+    font-size: 13px;
+ 
+
+}
+
+legend {
+    color: antiquewhite;
+    margin-bottom: 20px;
+}
+.imageDenied {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 45%;
+    color:antiquewhite;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.TitreAccueil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 40%;
+    color: antiquewhite;
+    font-size: 50px;
+    left: 0px;
+    margin-left: 400px;
+}
+.panier{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    position: relative;
+    top:400px;
+    color: antiquewhite;
+    border : solid 2px; 
+    font-size: 50px;
+    width: 7%;
+    align-items: center;
+    text-decoration: none;
+    background: #212930;
+    
+}
+/* Décrire l'animation */
+@keyframes slideDownFadeIN {
+    from {top:-100px;opacity: 0;}
+    to {top:0px;opacity:1;}
+}
+
+/* Foncer l'arrière-plan de la fenêtre modale */
+.modal {
+  display: none; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Afficher la fenêtre modale lorsqu'elle est ciblée par un lien supprimer */
+.modal:target {
+  display: table;
+  position: absolute;
+}
+
+/* la fenêtre modale  */
+.modal-dialog {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* Le contenu de la modale */
+.modal-dialog .modal-content {
+  margin: auto;
+  background-color: antiquewhite;
+  position: relative;
+  padding: 0;
+  outline: 0;
+  border: 1px #777 solid;
+  text-align: justify;
+  width: 80%;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+ 
+  animation-name: slideDownFadeIN;
+  animation-duration: 0.9s;
+}
+
+/* Bouton servant à fermer la fenêtre modale */
+.closebtn {
+  text-decoration: none;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.vider {
+    display: flex;
+    justify-content: right;
+    
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 1300px) {
+    
+    .magasin{
+        background-color: antiquewhite;
+        margin-left: 485px;
+        margin-right: 485px;
+        border-radius: 0px;
+        border: thick double #000000;
+        text-align: justify;
+        display: block;
+     
+        box-shadow: rgba(250, 250, 250, 0.404) 0px 1px 6px 0px, rgba(253, 252, 252, 0.925) 0px 1px 4px 0px;
+        
+    }
+    .Titre{
+        margin-top: -190px;
+        font-size: 75px;
+        text-align: center; 
+        color: antiquewhite;
+        padding-bottom: 50px;
+    }
+
+    
+    
+    
+}
+@media screen and (min-width: 750px) and (max-width: 1300px) {
+    
+    .magasin{
+        background-color: antiquewhite;
+        margin-left: 48px;
+        margin-right: 70px;
+        border-radius: 0px;
+        border: thick double #000000;
+        text-align: justify;
+        position: relative;
+     
+        box-shadow: rgba(250, 250, 250, 0.404) 0px 1px 6px 0px, rgba(253, 252, 252, 0.925) 0px 1px 4px 0px;
+        
+    }
+    .Titre{
+        margin-top: -190px;
+        font-size: 75px;
+        text-align: center; 
+        color: antiquewhite;
+        padding-bottom: 50px;
+    }
+
+
+}
+
+@media screen and (max-width: 750px) {
+    .magasin{
+        background-color: antiquewhite;
+        margin-left: 48px;
+        margin-right: 48px;
+        border-radius: 0px;
+        border: thick double #000000;
+        text-align: justify;
+       
+     
+        box-shadow: rgba(250, 250, 250, 0.404) 0px 1px 6px 0px, rgba(253, 252, 252, 0.925) 0px 1px 4px 0px;
+        
+    }
+    .Titre{
+       
+        
+        font-size: 75px;
+        text-align: center; 
+        color: antiquewhite;
+        position:relative;
+        bottom: 320px;
+    }
+    
+
+}
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(132, 136, 138);
+}
+.anim{
+    font-size: 80px;
+    color: #000000;
+    margin-bottom: 150px;
+    animation: snake 1.2s linear infinite;
+}
+@keyframes snake {
+    0%{
+        color:antiquewhite;
+        text-shadow: 0 0 7px antiquewhite;
+    }
+    90%{
+        color: aqua;
+        text-shadow: none;
+    }
+    100%{
+        color:antiquewhite;
+        text-shadow: 0 0 7px antiquewhite;
+    }
+}
+.fondu-out {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+
